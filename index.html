@@ -1,12 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <title>이상준♥정문정 | 저희 결혼합니다.</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic,300italic,300,700italic">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-gallery/2.17.0/css/blueimp-gallery.min.css">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
+
 <body>
 
-<h1>테스트</h1>
-	
+<!-- 본문 -->
+<div id="content" data-scroll-easing="easeOutCubic">
+
+    <!-- 메인사진 -->
+    <section class="section">
+        <div class="bg-image animated infinite zooming"><img src="assets/img/gallery/01.jpg" alt=""></div>
+        <div class="container text-center topimage"></div>
+    </section>
+
+    <!-- 초대제목 -->
+    <section class="section section-bent bg-white">
+        <div class="cross-left"></div>
+        <div class="cross-right"></div>
+        <div class="relative container container-wide">
+            <h5 class="text-center margin-b-10">이상준 <span class="text-red">♥</span> 정문정</h5>
+            <h4 class="text-center margin-b-40"><b>저희 결혼합니다</b></h4>
+            <h6 class="text-center margin-b-10">2016.3.5 (토) 오후 1시</h6>
+            <h6 class="text-center margin-b-50">대구 라테라스 웨딩</h6>
+        </div>
+    </section>
+
+    <!-- 초대문구 -->
+    <section class="section section-bent bg-white border-top">
+        <div class="padding-t-50 padding-b-50 container container-wide toptext text-center">
+            모든 것이 새로워지는 봄날에<br>사랑하는 두 사람이 새로운 인생을 시작합니다.<br>두 사람의 결혼을 가까이서 축복해주시고<br>따뜻한 마음으로 격려해주시면<br>큰 기쁨이 되겠습니다.
+        </div>
+        <div class="text-center padding-b-50 container container-wide">
+            <h6>이경순 · 서경희의 장남 <b class="namebold">상준</b></h6>
+            <h6>정갑철 · 김성옥의 차녀 <b class="namebold">문정</b></h6>
+        </div>
+    </section>
+
+    <!-- 지도안내 -->
+    <section class="section bg-white">
+        <div class="border-top padding-t-50">
+            <h6 class="text-center margin-b-10">2016.3.5 (토) 오후 1시</h6>
+            <h6 class="text-center margin-b-20"><b>대구 라테라스 웨딩</b></h6>
+        </div>
+        <div class="text-center margin-b-50">
+            <a class="btn-map" href="http://map.naver.com/?dlevel=12&pinType=site&pinId=36600944&x=128.5441907&y=35.8366353&enc=b64" target="_blank">네이버지도</a>
+            <a class="btn-map hidden-xs" href="http://map.daum.net/?urlX=848808&urlY=652548&itemId=26559704" target="_blank">다음지도</a>
+            <a class="btn-map hidden-sm hidden-md hidden-lg" onclick="callNumber('053-254-7770')">문의전화</a>
+        </div>
+        <div id="map-canvas"></div>
+    </section>
+
+    <!-- 웨딩사진 -->
+    <section class="section section-bent border-top bg-white padding-t-50">
+        <div class="relative container container-wide lightBoxGallery row" style="background-color:#ff0000; margin:0 auto;">
+            <a href="assets/img/gallery/01.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-01.jpg"></a>
+            <a href="assets/img/gallery/02.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-02.jpg"></a>
+            <a href="assets/img/gallery/03.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-03.jpg"></a>
+            <a href="assets/img/gallery/04.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-04.jpg"></a>
+            <a href="assets/img/gallery/05.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-05.jpg"></a>
+            <a href="assets/img/gallery/06.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-06.jpg"></a>
+            <a href="assets/img/gallery/07.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-07.jpg"></a>
+            <a href="assets/img/gallery/08.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-08.jpg"></a>
+            <a href="assets/img/gallery/09.jpg" title="" data-gallery="" class="col-xs-4"><img src="assets/img/gallery/thumb-09.jpg"></a>
+            <div id="blueimp-gallery" class="blueimp-gallery">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락하기 -->
+    <section class="section section-bent padding-t-70 contact">
+        <div class="row hidden-sm hidden-md hidden-lg">
+            <div class="col-xs-6 text-center btnbg">
+                <form action="sms:010-6700-3900">
+                    <button class="btnarea" value="submit" style="border:0px!important">
+                        <img src="assets/img/bridegroom.png" alt="" class="btnimg">
+                        <div class="btntext"><b>신랑</b>에게<br>연락하기</div>
+                    </button>
+                </form>
+            </div>
+            <div class="col-xs-6 text-center btnbg">
+                <form action="sms:010-9076-6705">
+                    <button class="btnarea" value="submit" style="border:0px!important">
+                        <img src="assets/img/bride.png" alt="" class="btnimg">
+                        <div class="btntext"><b>신부</b>에게<br>연락하기</div>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="row hidden-xs">
+            <div class="col-xs-6 text-center btnbg">
+                <form action="mailto:gomdoreepooh@gmail.com">
+                    <button class="btnarea" value="submit">
+                        <img src="assets/img/bridegroom.png" alt="" class="btnimg">
+                        <div class="btntext"><b>신랑</b>에게<br>연락하기</div>
+                    </button>
+                </form>
+            </div>
+            <div class="col-xs-6 text-center btnbg">
+                <form action="mailto:anne.jeong@daum.net">
+                    <button class="btnarea" value="submit">
+                        <img src="assets/img/bride.png" alt="" class="btnimg">
+                        <div class="btntext"><b>신부</b>에게<br>연락하기</div>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <a id="kakao-link-btn" href="javascript:;">
+                  <div class="btnarea2"><b>카카오톡</b>으로 공유하기</div>
+                </a>
+            
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- 본문 -->
+
+<!-- 페이지로더 -->
+<div id="page-loader"></div>
+ 
+<!-- 자바스크립트 -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/blueimp-gallery/2.15.0/js/jquery.blueimp-gallery.min.js"></script>
+<script type="text/javascript">
+// 구글지도
+function initialize() {
+      var myLatlng = new google.maps.LatLng(35.836896,128.544249);
+      var myOptions = { 
+        mapTypeControl: false,
+        zoom: 15,
+        zoomControl: true,
+        zoomControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_TOP
+        },
+        streetViewControl: false,
+        draggable:false,
+        center: myLatlng
+      }
+      var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+      map.panBy(0, -40);
+
+      var marker = new google.maps.Marker({
+       position: myLatlng, 
+       map: map, 
+       title:"대구 라테라스 웨딩"
+      });   
+      var infowindow = new google.maps.InfoWindow({
+        content: "<b>대구 라테라스 웨딩</b><br>대구 달서구 구마로 152<br>053-254-7770"
+      });
+      infowindow.open(map,marker);
+     }
+     window.onload=function(){
+        initialize();
+     }
+
+// 페이지로더
+window.paceOptions = {
+    target: '#page-loader',
+    ajax: true
+};
+
+// 사용할 앱의 JavaScript 키를 설정해 주세요.
+Kakao.init('d4018a29267088e3c6f5d39314319d60');
+
+// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+Kakao.Link.createTalkLinkButton({
+  container: '#kakao-link-btn',
+  label: '이상준 & 정문정\n저희 결혼합니다.\n\n모든 것이 새로워지는 봄날에\n사랑하는 두 사람이 새로운 인생을 시작합니다. 가까이서 축복해 주시고 따뜻한 마음으로 격려해주세요. ^^',
+  image: {
+    src: 'http://www.sjmj.kr/assets/img/gallery/01.jpg',
+    width: '300',
+    height: '200'
+  },
+  webButton: {
+    text: '시간과 장소 보기',
+    url: 'http://www.sjmj.kr' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+  }
+});
+
+// 전화걸기
+function callNumber(num){
+location.href="tel:"+num;
+}
+
+// Google Analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-73786655-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
 </body>
+
 </html>
