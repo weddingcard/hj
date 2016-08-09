@@ -174,7 +174,7 @@ body {
 	margin:0 auto;
 }
 
-* {font-family: 'Spoqa Han Sans', 'Sans-serif'!important;}
+* {font-family: 'Spoqa Han Sans', 'Sans-serif'!important; font-weight: 400;}
 
 .businfo li {
 	margin:0; 
