@@ -173,6 +173,9 @@ body {
 	border-bottom:0px;
 	margin:0 auto;
 }
+
+* {font-family: 'Spoqa Han Sans', 'Sans-serif'!important;}
+
 .businfo li {
 	margin:0; 
 	padding:8px 0;
